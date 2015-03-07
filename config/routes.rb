@@ -15,7 +15,7 @@ Rails.application.routes.draw do
   get 'welcome/features'
 
   resources :invoices do
-    resource :purchases, except: [:index], controller: 'invoices/purchases'
+    resources :purchases, except: [:index], controller: 'invoices/purchases'
   end
 
   
