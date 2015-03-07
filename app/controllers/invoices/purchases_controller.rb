@@ -51,7 +51,7 @@ class Invoices::PurchasesController < ApplicationController
   end
 
   def destroy
-    @invoice = Invoice.find(params[:invocie_id])
+    @invoice = Invoice.find(params[:invoice_id])
     @purchase = Purchase.find(params[:id])
     title = @purchase.name
     
